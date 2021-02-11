@@ -3,14 +3,14 @@
 ## Introduction
 
 A Zabbix template for mtr (My traceroute). It uses all the new features from Zabbix 4.4 and 5.0 with Master Items, JSONpath processing and Dependent items.
-This template was built on Zabbix 5.0.x and Debian 9 & 10 amd64 with [mtr-tiny](https://packages.debian.org/stable/mtr-tiny).
+This template was built on Zabbix 5.0.x, 5.2.x and Debian 9 & 10, CentOS 7 and 8 amd64 with [mtr-tiny](https://packages.debian.org/stable/mtr-tiny).
 
 ## Installation
 
-1. Copy the script file [mtr.sh](https://github.com/xenadmin/zabbix-templates/tree/master/zabbix-net-mtr/mtr.sh) to the **ExternalScripts** folder on your Zabbix Server or Proxy.
-1. Make the script executable: `chmod +x mtr.sh`
-1. Import the [Template](https://github.com/xenadmin/zabbix-templates/tree/master/zabbix-net-mtr/Template_Net_MTR.xml) to your Zabbix Server.
-1. Link the template to the target host. From there on Zabbix Server or Proxy will discover and monitor the hops between itself and the target's HOST IP using the {HOST.IP} macro.
+1. Copy the script file [mtr.sh](https://github.com/everaldoscabral/zabbix-templates/blob/master/zabbix-net-mtr/mtr.sh) to the **ExternalScripts** folder on your Zabbix Server or Proxy.
+2. Make the script executable: `chmod +x mtr.sh`
+3. Import the [Template by IP](https://github.com/everaldoscabral/zabbix-templates/blob/master/zabbix-net-mtr/TEMPLATE-NET-MTR.xml) or [Template by DNS](https://github.com/everaldoscabral/zabbix-templates/blob/master/zabbix-net-mtr/TEMPLATE-NET-MTR-BY-DNS.xml)  to your Zabbix Server.
+
 
 ## Notes
 
@@ -33,4 +33,4 @@ Parts of this Template are directly related to [a reddit discussion](https://www
 
 ## Changelog
 
-- 01 October 2020: initial commit.
+- 11 February 2021: initial commit.
